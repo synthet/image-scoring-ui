@@ -6,18 +6,25 @@ Shared **VS Code Dark+** design tokens and UI constants for **Vexlum Scoring** (
 
 ## Install
 
-```bash
-npm install @synthet/image-scoring-design
+**From GitHub** (CI, Docker, or no sibling clone):
+
+```json
+"@synthet/image-scoring-design": "github:synthet/image-scoring-ui#v1.0.0"
 ```
 
-For local development, link or file-depend from this repo:
-
 ```bash
-cd d:/Projects/image-scoring-ui
-npm run build
-npm link
-# in consumer: npm link @synthet/image-scoring-design
+npm install
 ```
+
+**Local sibling layout** (`image-scoring-ui` next to backend and gallery):
+
+```json
+"@synthet/image-scoring-design": "file:../image-scoring-ui"
+```
+
+Run `npm run build` in this repo before `npm install` in consumers so `dist/` exists.
+
+**Repository:** [github.com/synthet/image-scoring-ui](https://github.com/synthet/image-scoring-ui) · `git@github.com:synthet/image-scoring-ui.git`
 
 ## Build
 
