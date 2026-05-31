@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Embedding space mascots</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: #1e1e1e;
+      color: #ccc;
+      padding: 24px;
+      margin: 0;
+    }
+    h1 { font-size: 1.25rem; font-weight: 600; margin: 0 0 8px; }
+    p { color: #9d9d9d; margin: 0 0 24px; font-size: 0.875rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 12px;
+      max-width: 960px;
+    }
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      background: #252526;
+      border: 1px solid #474747;
+      border-radius: 6px;
+    }
+    .icon-wrap {
+      flex-shrink: 0;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #141414;
+      border-radius: 4px;
+    }
+    svg { image-rendering: pixelated; }
+    .label { font-size: 0.8125rem; font-weight: 500; }
+    .code { font-size: 0.6875rem; color: #6d6d6d; font-family: ui-monospace, monospace; margin-top: 2px; }
+    .size-row { margin-top: 32px; max-width: 960px; }
+    .size-row h2 { font-size: 0.875rem; color: #9d9d9d; margin-bottom: 12px; }
+    .sizes { display: flex; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+    .size-item { text-align: center; font-size: 0.625rem; color: #6d6d6d; }
+  </style>
+</head>
+<body>
+  <h1>Embedding space mascots</h1>
+  <p>16×16 pixel sprites · tinted via <code>currentColor</code> · default UI size 14px</p>
+  <div class="grid" id="grid"></div>
+  <div class="size-row">
+    <h2>MobileNet at 14 / 16 / 32 / 48 px</h2>
+    <div class="sizes" id="sizes"></div>
+  </div>
+  <script>
+    const icons = {
+      mobilenet_v2_imagenet_gap: {
+        label: 'MobileNetV2 (1280d)',
+        color: '#4fc1ff',
+        rows: [
+          '......####......','.....######.....','....########....',
+          '...##########...','...##......##...','...##.####.##...',
+          '....########....','.....######.....','......####......',
+        ],
+      },
+      clip_vit_b32_image: {
+        label: 'CLIP (512d)',
+        color: '#4ec9b0',
+        rows: [
+          '......####......','.....##..##.....','....##....##....',
+          '....##....##....','.....######.....','......####......',
+          '.....##..##.....','....##....##....','...##......##...',
+          '..##........##..',
+        ],
+      },
+      bioclip_2_image: {
+        label: 'BioCLIP (768d)',
+        color: '#ce9178',
+        rows: [
+          '......##........','.....####.......','....######......',
+          '...########.....','..##########....','...########.....',
+          '....######......','.....####.......','......##........',
+        ],
+      },
+      blip_vit_b16_image: {
+        label: 'BLIP (768d)',
+        color: '#c586c0',
+        rows: [
+          '...########.....','..##########....','.############...',
+          '.############...','..##########....','...########.....',
+          '.....####.......','.....####.......','.....####.......',
+          '......##........',
+        ],
+      },
+      openclip_l14_laion2b_image: {
+        label: 'OpenCLIP L/14 (768d)',
+        color: '#569cd6',
+        rows: [
+          '.....######.....','...##########...','.##############.',
+          '################','.##############.','...##########...',
+          '.....######.....',
+        ],
+      },
+      openai_clip_vit_l14_image: {
+        label: 'OpenAI CLIP L/14 (768d)',
+        color: '#dcdcaa',
+        rows: [
+          '......##........','.....####.......','....######......',
+          '..##########....','...########.....','....######......',
+          '.....####.......','......##........',
+        ],
+      },
+      dinov2_reg_base_image: {
+        label: 'DINOv2 (768d)',
+        color: '#9cdcfe',
+        rows: [
+          '.....######.....','....########....','...##########...',
+          '...##....##.....','...##########...','....########....',
+          '.....######.....','......####......',
+        ],
+      },
+      siglip2_base_image: {
+        label: 'SigLIP2 (768d)',
+        color: '#d16969',
+        rows: [
+          '......##........','.....####.......','....######......',
+          '...########.....','....######......','.....####.......',
+          '......##........',
+        ],
+      },
+      fallback: {
+        label: 'Unknown code (fallback)',
+        color: '#6d6d6d',
+        rows: [
+          '.##..##..##..##.','.##..##..##..##.','................',
+          '.##..##..##..##.','.##..##..##..##.','................',
+          '.##..##..##..##.','.##..##..##..##.',
+        ],
+      },
+    };
+
+    function makeSvg(rows, size, color) {
+      const w = rows[0].length, h = rows.length;
+      let rects = '';
+      rows.forEach((row, y) => {
+        for (let x = 0; x < row.length; x++) {
+          if (row[x] === '#') rects += `<rect x="${x}" y="${y}" width="1" height="1" fill="currentColor"/>`;
+        }
+      });
+      return `<svg viewBox="0 0 ${w} ${h}" width="${size}" height="${size}" style="color:${color}">${rects}</svg>`;
+    }
+
+    const grid = document.getElementById('grid');
+    for (const [code, { label, color, rows }] of Object.entries(icons)) {
+      if (code === 'fallback') continue;
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <div class="icon-wrap">${makeSvg(rows, 48, color)}</div>
+        <div>
+          <div class="label">${label}</div>
+          <div class="code">${code}</div>
+        </div>`;
+      grid.appendChild(card);
+    }
+    // fallback card
+    const fb = icons.fallback;
+    const fbCard = document.createElement('div');
+    fbCard.className = 'card';
+    fbCard.innerHTML = `
+      <div class="icon-wrap">${makeSvg(fb.rows, 48, fb.color)}</div>
+      <div>
+        <div class="label">${fb.label}</div>
+        <div class="code">(any unregistered code)</div>
+      </div>`;
+    grid.appendChild(fbCard);
+
+    const sizes = document.getElementById('sizes');
+    [14, 16, 32, 48].forEach((px) => {
+      const d = document.createElement('div');
+      d.className = 'size-item';
+      d.innerHTML = makeSvg(icons.mobilenet_v2_imagenet_gap.rows, px, icons.mobilenet_v2_imagenet_gap.color)
+        + `<div>${px}px</div>`;
+      sizes.appendChild(d);
+    });
+  </script>
+</body>
+</html>

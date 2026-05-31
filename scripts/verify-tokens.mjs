@@ -11,10 +11,17 @@ const css = readFileSync(join(ROOT, 'dist', 'tokens.css'), 'utf8');
 
 const required = [
   ['--color-bg-primary', tokens.color.bgPrimary],
+  ['--color-bg-preview', tokens.color.bgPreview],
   ['--color-success', tokens.color.success],
+  ['--color-success-muted', tokens.color.successMuted],
   ['--color-danger', tokens.color.danger],
+  ['--color-danger-muted', tokens.color.dangerMuted],
+  ['--color-warning-muted', tokens.color.warningMuted],
+  ['--embedding-mobilenet', tokens.embedding.mobilenetV2ImagenetGap],
   ['--label-red', tokens.label.red],
-  ['--score-gold', tokens.color.scoreGold],
+  ['--color-score-gold', tokens.color.scoreGold],
+  ['--color-text-on-accent', tokens.color.textOnAccent],
+  ['--color-text-placeholder', tokens.color.textPlaceholder],
 ];
 
 let failed = false;

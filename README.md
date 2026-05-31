@@ -9,7 +9,7 @@ Shared **VS Code Dark+** design tokens and UI constants for **Vexlum Scoring** (
 **From GitHub** (CI, Docker, or no sibling clone):
 
 ```json
-"@synthet/image-scoring-design": "github:synthet/image-scoring-ui#v1.0.0"
+"@synthet/image-scoring-design": "github:synthet/image-scoring-ui#v1.2.0"
 ```
 
 ```bash
@@ -41,7 +41,7 @@ Outputs under `dist/`:
 | `tokens.css` | `@synthet/image-scoring-design/tokens.css` | Gallery CSS Modules, any app `:root` variables |
 | `tailwind-theme.css` | `@synthet/image-scoring-design/tailwind-theme.css` | Backend frontend: `@import` in Tailwind v4 `index.css` |
 | `gradio-snippet.css` | `@synthet/image-scoring-design/gradio-snippet.css` | Gradio `/app` overrides after main UI CSS |
-| `index.js` | `@synthet/image-scoring-design` | `LABEL_COLORS`, `PHASE_STATUS_COLORS`, `phaseStatusColor`, `STAGE_DISPLAY` |
+| `index.js` | `@synthet/image-scoring-design` | `LABEL_COLORS`, `PHASE_STATUS_COLORS`, `phaseStatusColor`, `STAGE_DISPLAY`, `EMBEDDING_SPACE_*`, `EmbeddingSpaceIcon`, `formatScoreValue` |
 | `tokens.json` | `@synthet/image-scoring-design/tokens.json` | Tooling, docs, custom generators |
 
 ## Usage

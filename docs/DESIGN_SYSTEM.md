@@ -22,6 +22,7 @@ Both main apps share a VS Code Dark+ visual identity. Anything else (Material gr
 | `--color-bg-secondary` | `#252526` | Sidebar, side panels, elevated regions |
 | `--color-bg-tertiary` | `#2d2d30` | Cards, list rows, modals |
 | `--color-bg-elevated` | `#3c3c3c` | Hover row, popovers, input focus |
+| `--color-bg-preview` | `#141414` | Image preview well, map canvas, deep inset panels |
 | `--color-border` | `#474747` | Default 1px divider, card border |
 | `--color-border-muted` | `#3c3c3c` | Subtle separator inside a card |
 
@@ -31,7 +32,9 @@ Both main apps share a VS Code Dark+ visual identity. Anything else (Material gr
 |---|---|---|
 | `--color-text-primary` | `#cccccc` | Body copy, headings |
 | `--color-text-secondary` | `#9d9d9d` | Captions, secondary labels |
-| `--color-text-muted` | `#6d6d6d` | Disabled / placeholder text, muted icons |
+| `--color-text-muted` | `#6d6d6d` | Disabled / muted icons |
+| `--color-text-on-accent` | `#ffffff` | Labels on filled accent buttons and chips (≥4.5:1 on `#007acc`) |
+| `--color-text-placeholder` | `#9d9d9d` | Input and date-picker placeholders on dark surfaces |
 
 ### Accent (interactive blue)
 
@@ -47,11 +50,14 @@ Both main apps share a VS Code Dark+ visual identity. Anything else (Material gr
 |---|---|---|---|
 | `--color-success` | `#89d185` | Done / completed phase, positive toast | `CheckCircle2` |
 | `--color-success-bg` | `#1a3320` | Tinted success surface |  |
+| `--color-success-muted` | `#1a3320` | Compact success badge background (phase actions) |  |
 | `--color-success-border` | `#2d6a2d` | Success card outline |  |
 | `--color-warning` | `#cca700` | Warnings, partial / paused | `AlertTriangle` |
 | `--color-warning-bg` | `#332900` | Tinted warning surface |  |
+| `--color-warning-muted` | `#332900` | Compact warning badge background |  |
 | `--color-danger` | `#f44747` | Errors, failed / canceled | `XCircle` |
 | `--color-danger-bg` | `#3a1515` | Tinted danger surface |  |
+| `--color-danger-muted` | `#3a1515` | Compact danger badge background |  |
 | `--color-danger-border` | `#7a2a2a` | Danger card outline |  |
 | `--color-info` | `#9cdcfe` | Informational toast | `Info` |
 | `--color-info-bg` | `#003a5c` | Tinted info surface |  |
@@ -93,9 +99,68 @@ Use `LABEL_COLORS` from `@synthet/image-scoring-design` in TypeScript.
 
 Star outlines use `--color-text-muted`.
 
+Use `formatScoreValue()` from this package for normalized **0–1** scores in tables and inspectors. Integer `1` must display as `100.00%`, not `1`.
+
+### Embedding spaces (icons / badges)
+
+| `embedding_space` code | CSS var | TS `EMBEDDING_SPACE_COLORS` |
+|---|---|---|
+| `mobilenet_v2_imagenet_gap` | `--embedding-mobilenet` | same as `--color-accent-bright` |
+| `clip_vit_b32_image` | `--embedding-clip` | `#4ec9b0` |
+| `bioclip_2_image` | `--embedding-bioclip` | `#ce9178` |
+| `blip_vit_b16_image` | `--embedding-blip` | `#c586c0` |
+| `openclip_l14_laion2b_image` | `--embedding-openclip` | `#569cd6` |
+| `openai_clip_vit_l14_image` | `--embedding-openai-clip` | `#dcdcaa` |
+| `dinov2_reg_base_image` | `--embedding-dinov2` | `#9cdcfe` |
+| `siglip2_base_image` | `--embedding-siglip2` | `#d16969` |
+
+Import `EMBEDDING_SPACE_COLORS`, `EMBEDDING_SPACE_LABELS`, and `EmbeddingSpaceIcon` from `@synthet/image-scoring-design` instead of hardcoding hex or Lucide picks in apps.
+
+## UI patterns (apps implement; tokens defined here)
+
+### Live connection indicator (WebUI header)
+
+| State | Dot | Label |
+|---|---|---|
+| Connecting (first load) | `--color-warning`, optional pulse | `Connecting…` |
+| Reconnecting (was live, socket dropped) | `--color-warning`, optional pulse | `Reconnecting…` |
+| Live | `--color-success` | `Live` |
+| Offline (timeout without live socket) | `--color-text-muted` | `Offline` |
+
+Do not show **Offline** on cold load before the first connection attempt completes.
+
+### Images table
+
+- **Quality:** show `formatScoreValue` when `score_general > 0`; otherwise a muted **unscored** chip (`bg-elevated`, `text-muted`), not a bare em dash.
+- **Phases / Embeddings columns:** icon-only rows; put a short legend in the column header `title` (indexing → metadata → scoring → culling → keywords → birds; embedding model names).
+
+### Image inspector
+
+- Left: preview on `--color-bg-preview`; right: collapsible sections on `--color-bg-secondary`.
+- Section jump nav (anchor links) + **Collapse all** for long metadata scroll.
+- Model roster: inactive models at reduced opacity with separate **off** / **shadow** badges (flex gap for screen readers).
+
 ## Icon contract (Lucide)
 
-All icons come from [lucide-react](https://lucide.dev). Both repos pin a recent 0.5x release. Avoid mixing icon libraries.
+All **chrome and action** icons come from [lucide-react](https://lucide.dev). Both repos pin a recent 0.5x release. Avoid mixing other icon libraries for toolbar, navigation, and severity affordances.
+
+### Embedding space mascots (exception)
+
+Per-model **pixel mascots** live in this package (`EmbeddingSpaceIcon`, `src/icons/embedding/`). They use `currentColor` tinted via `EMBEDDING_SPACE_COLORS[code]`. Original 16×16 sprites only — do not commit unlicensed stock art.
+
+| `embedding_space` code | Mascot theme |
+|---|---|
+| `mobilenet_v2_imagenet_gap` | Crab invader |
+| `clip_vit_b32_image` | Squid invader |
+| `bioclip_2_image` | Leaf |
+| `blip_vit_b16_image` | Speech bubble |
+| `openclip_l14_laion2b_image` | UFO |
+| `openai_clip_vit_l14_image` | Star |
+| `dinov2_reg_base_image` | Dino head |
+| `siglip2_base_image` | Diamond |
+| unknown code | Pixel grid fallback |
+
+Default inline size: **14px** (`size={14}`). Unknown registry codes render the fallback glyph; keep `title` on the parent chip with the raw `code`.
 
 ### One concept, one icon
 
@@ -140,11 +205,24 @@ All icons come from [lucide-react](https://lucide.dev). Both repos pin a recent 
 
 - Spin: `Loader2` with `className="animate-spin"`.
 
+## Accessibility (contrast pairs)
+
+Use these pairings so WCAG AA text contrast (4.5:1 normal copy) holds on dark chrome:
+
+| Foreground | Background | Token pair |
+|---|---|---|
+| On accent fill | `#007acc` | `--color-text-on-accent` on `--color-accent` |
+| Placeholder | `#2d2d30` / `#333333` input | `--color-text-placeholder` on `--color-bg-tertiary` or app `--input-bg` |
+| Body | Page | `--color-text-primary` on `--color-bg-primary` |
+
+**Do not** put `--color-text-primary` or `#eee` on solid `--color-accent` buttons; use `--color-text-on-accent` only.
+
 ## Do / don't
 
 **Do**
 
 - Import CSS from this package (`tokens.css`, `tailwind-theme.css`).
+- Use `--color-text-on-accent` on filled accent controls (filter pills, primary chips).
 - Use Tailwind v4 utilities from `@theme` in the backend frontend after importing `tailwind-theme.css`.
 - Use `var(--color-...)` in gallery CSS Modules.
 - Use `phaseStatusColor` / `PHASE_STATUS_COLORS` for hex in TS when CSS variables are awkward.
@@ -152,6 +230,7 @@ All icons come from [lucide-react](https://lucide.dev). Both repos pin a recent 
 **Don't**
 
 - Add new hex literals in app components; extend `src/tokens.json` here, rebuild, publish.
+- Use `#eee` or `--color-text-primary` on solid accent backgrounds.
 - Mix Material palette with VS Code Dark+ status colors.
 - Reuse `--label-*` for status / severity.
 - Re-introduce a parallel phase status icon map in gallery without aligning with backend `PhaseStatusIcon`.
@@ -164,6 +243,8 @@ All icons come from [lucide-react](https://lucide.dev). Both repos pin a recent 
 | CSS variables | `dist/tokens.css` | `dist/tailwind-theme.css` via `@import` in [frontend/src/index.css](https://github.com/synthet/image-scoring-backend/blob/main/frontend/src/index.css) | `@import '@synthet/image-scoring-design/tokens.css'` (replace or alias [src/styles/tokens.css](https://github.com/synthet/image-scoring-gallery/blob/main/src/styles/tokens.css)) |
 | Gradio overrides | `dist/gradio-snippet.css` | Wire in operator / Gradio bundle | n/a |
 | Label / phase hex in TS | `LABEL_COLORS`, `PHASE_STATUS_COLORS`, `phaseStatusColor` | Replace [labelColors.ts](https://github.com/synthet/image-scoring-backend/blob/main/frontend/src/constants/labelColors.ts) imports | Replace gallery constants |
+| Embedding icon colors | `EMBEDDING_SPACE_COLORS`, `EMBEDDING_SPACE_LABELS`, `EmbeddingSpaceIcon` | Images grid + inspector + Atlas | When showing embedding presence or space selector |
+| Score formatting | `formatScoreValue` | Inspector + any 0–1 score display | Same |
 | Pipeline stage display names | `STAGE_DISPLAY` | Align with backend types | Import from package |
 | Status icon component | n/a (icons only in apps) | [PhaseStatusIcon.tsx](https://github.com/synthet/image-scoring-backend/blob/main/frontend/src/components/status/PhaseStatusIcon.tsx) | n/a |
 | Severity toasts | tokens in CSS | [badge.tsx](https://github.com/synthet/image-scoring-backend/blob/main/frontend/src/components/ui/badge.tsx) | [NotificationTray.tsx](https://github.com/synthet/image-scoring-gallery/blob/main/src/components/Layout/NotificationTray.tsx) |
