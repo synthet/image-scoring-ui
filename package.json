@@ -1,6 +1,6 @@
 {
   "name": "@synthet/image-scoring-design",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Shared VS Code Dark+ design tokens and UI constants for Vexlum Scoring apps",
   "type": "module",
   "sideEffects": [

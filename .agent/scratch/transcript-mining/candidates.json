@@ -1,0 +1,155 @@
+[
+  {
+    "text": "Design token changes start in image-scoring-ui src/tokens.json; bump consumers after npm build.",
+    "category": "working_rule",
+    "confidence": "medium",
+    "source_hint": "39a36e76",
+    "transcript_uuid": "39a36e76-d5b6-4a44-afb1-01b8c756b46b",
+    "relevance": 0.9,
+    "task_summary": "/image-scoring-gallery/release /image-scoring-backend/release"
+  },
+  {
+    "text": "Session outcome pattern: Both repos are released, committed, and pushed.",
+    "category": "successful_pattern",
+    "confidence": "low",
+    "source_hint": "39a36e76",
+    "transcript_uuid": "39a36e76-d5b6-4a44-afb1-01b8c756b46b",
+    "relevance": 0.9,
+    "task_summary": "/image-scoring-gallery/release /image-scoring-backend/release"
+  },
+  {
+    "text": "Design token changes start in image-scoring-ui src/tokens.json; bump consumers after npm build.",
+    "category": "working_rule",
+    "confidence": "medium",
+    "source_hint": "a4f70b1b",
+    "transcript_uuid": "a4f70b1b-1224-495e-b68c-4b244d02d26c",
+    "relevance": 0.9,
+    "task_summary": "Please check whether we have rolled back, reverted or overwritten some recent changes. E.g. I see 4 embedding mascot icons agains instead of the full set; analyze git history and restore lost features"
+  },
+  {
+    "text": "Session outcome pattern: The first backend pytest run hung (no output after ~13 minutes), so that process was killed.",
+    "category": "successful_pattern",
+    "confidence": "low",
+    "source_hint": "a4f70b1b",
+    "transcript_uuid": "a4f70b1b-1224-495e-b68c-4b244d02d26c",
+    "relevance": 0.9,
+    "task_summary": "Please check whether we have rolled back, reverted or overwritten some recent changes. E.g. I see 4 embedding mascot icons agains instead of the full set; analyze git history and restore lost features"
+  },
+  {
+    "text": "Design token changes start in image-scoring-ui src/tokens.json; bump consumers after npm build.",
+    "category": "working_rule",
+    "confidence": "medium",
+    "source_hint": "3031a9a4",
+    "transcript_uuid": "3031a9a4-f2ca-4454-8893-7c360a16fb5e",
+    "relevance": 0.85,
+    "task_summary": "resolve all the uncommited changes. sync with defaul 9master/main) branches. checkout default branches"
+  },
+  {
+    "text": "Session outcome pattern: Recovery is complete on both default branches. Summary:",
+    "category": "successful_pattern",
+    "confidence": "low",
+    "source_hint": "3031a9a4",
+    "transcript_uuid": "3031a9a4-f2ca-4454-8893-7c360a16fb5e",
+    "relevance": 0.85,
+    "task_summary": "resolve all the uncommited changes. sync with defaul 9master/main) branches. checkout default branches"
+  },
+  {
+    "text": "Design token changes start in image-scoring-ui src/tokens.json; bump consumers after npm build.",
+    "category": "working_rule",
+    "confidence": "medium",
+    "source_hint": "6ed23e0b",
+    "transcript_uuid": "6ed23e0b-1ec0-4498-8f35-257cb9660ec4",
+    "relevance": 0.76,
+    "task_summary": "gallery hangs"
+  },
+  {
+    "text": "Session outcome pattern: **Publish complete.** `image-scoring-ui` v1.2.0 is on GitHub: tag `v1.2.0`, release at https://github.com/synthet/image-scoring-ui/releases/tag/v1.2.0, with built `dist/` in the tag.",
+    "category": "successful_pattern",
+    "confidence": "low",
+    "source_hint": "6ed23e0b",
+    "transcript_uuid": "6ed23e0b-1ec0-4498-8f35-257cb9660ec4",
+    "relevance": 0.76,
+    "task_summary": "gallery hangs"
+  },
+  {
+    "text": "Design token changes start in image-scoring-ui src/tokens.json; bump consumers after npm build.",
+    "category": "working_rule",
+    "confidence": "medium",
+    "source_hint": "536a19b2",
+    "transcript_uuid": "536a19b2-92ed-4d70-86da-8d86c09ad063",
+    "relevance": 0.7100000000000001,
+    "task_summary": "In D:/Projects/image-scoring-backend and D:/Projects/image-scoring-gallery, analyze recent git history (last ~30 commits) and current uncommitted changes for evidence of rolled back, reverted, or overwritten features beyond embedding icons.\u2026"
+  },
+  {
+    "text": "Session outcome pattern: ## Git revert commits (last ~30)",
+    "category": "successful_pattern",
+    "confidence": "low",
+    "source_hint": "536a19b2",
+    "transcript_uuid": "536a19b2-92ed-4d70-86da-8d86c09ad063",
+    "relevance": 0.7100000000000001,
+    "task_summary": "In D:/Projects/image-scoring-backend and D:/Projects/image-scoring-gallery, analyze recent git history (last ~30 commits) and current uncommitted changes for evidence of rolled back, reverted, or overwritten features beyond embedding icons.\u2026"
+  },
+  {
+    "text": "JPEG export EXIF orientation is a separate pass from raster bake; see gallery feature doc.",
+    "category": "working_rule",
+    "confidence": "high",
+    "source_hint": "9272c6b9",
+    "transcript_uuid": "9272c6b9-fde1-40c5-a996-a88c538b83fc",
+    "relevance": 0.7100000000000001,
+    "task_summary": "In d:\\Projects\\image-scoring-gallery, analyze uncommitted changes from git status. Group into themes (stacks mode, gallery grid, db.ts, visual review reports, etc.). Identify scratch/temp files that should not be committed. Return theme gro\u2026"
+  },
+  {
+    "text": "Design token changes start in image-scoring-ui src/tokens.json; bump consumers after npm build.",
+    "category": "working_rule",
+    "confidence": "medium",
+    "source_hint": "9272c6b9",
+    "transcript_uuid": "9272c6b9-fde1-40c5-a996-a88c538b83fc",
+    "relevance": 0.7100000000000001,
+    "task_summary": "In d:\\Projects\\image-scoring-gallery, analyze uncommitted changes from git status. Group into themes (stacks mode, gallery grid, db.ts, visual review reports, etc.). Identify scratch/temp files that should not be committed. Return theme gro\u2026"
+  },
+  {
+    "text": "Design token changes start in image-scoring-ui src/tokens.json; bump consumers after npm build.",
+    "category": "working_rule",
+    "confidence": "medium",
+    "source_hint": "a56dd43c",
+    "transcript_uuid": "a56dd43c-a997-4946-8e1c-60621c31c0ba",
+    "relevance": 0.6900000000000001,
+    "task_summary": "Investigate image-scoring-backend, image-scoring-gallery, and image-scoring-ui git history for any rollback/revert related to embedding mascot icons or showing only 4 vs 8 embedding spaces in UI.\n\nSearch for:\n- Commits that changed PRIMARY_\u2026"
+  },
+  {
+    "text": "Design token changes start in image-scoring-ui src/tokens.json; bump consumers after npm build.",
+    "category": "working_rule",
+    "confidence": "medium",
+    "source_hint": "6cebd412",
+    "transcript_uuid": "6cebd412-95c5-4a5b-88c6-35bd3a3a0a3e",
+    "relevance": 0.6900000000000001,
+    "task_summary": "thorough code/design/UX/UI review; match the visual style with @d:\\Projects\\image-scoring-gallery and @d:\\Projects\\image-scoring-ui"
+  },
+  {
+    "text": "Design token changes start in image-scoring-ui src/tokens.json; bump consumers after npm build.",
+    "category": "working_rule",
+    "confidence": "medium",
+    "source_hint": "9a002576",
+    "transcript_uuid": "9a002576-8f22-44d4-a1e0-62c8ea4af4e7",
+    "relevance": 0.64,
+    "task_summary": "react-CH9jGrnx.js:8 Uncaught Error: Minified React error #525; visit https://react.dev/errors/525 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\n    at Wa (react-CH9jGrnx.js:8:3\u2026"
+  },
+  {
+    "text": "Design token changes start in image-scoring-ui src/tokens.json; bump consumers after npm build.",
+    "category": "working_rule",
+    "confidence": "medium",
+    "source_hint": "2bd0b298",
+    "transcript_uuid": "2bd0b298-deba-412d-bf7f-ea05db0f1224",
+    "relevance": 0.59,
+    "task_summary": "Perform housekeeping"
+  },
+  {
+    "text": "Session outcome pattern: Full housekeeping is complete. All plan todos are done.",
+    "category": "successful_pattern",
+    "confidence": "low",
+    "source_hint": "2bd0b298",
+    "transcript_uuid": "2bd0b298-deba-412d-bf7f-ea05db0f1224",
+    "relevance": 0.59,
+    "task_summary": "Perform housekeeping"
+  }
+]

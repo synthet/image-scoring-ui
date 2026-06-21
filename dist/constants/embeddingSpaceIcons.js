@@ -6,13 +6,17 @@ export const PRIMARY_EMBEDDING_SPACE_CODES = [
     'bioclip_2_image',
     'blip_vit_b16_image',
 ];
-/** Full registry aligned with modules/embedding_spaces.py SPACE_DIMS. */
-export const ALL_EMBEDDING_SPACE_CODES = [
-    ...PRIMARY_EMBEDDING_SPACE_CODES,
+/** Opt-in culling towers (768-d); produced when listed in embeddings.culling_spaces. */
+export const CULLING_EMBEDDING_SPACE_CODES = [
     'openclip_l14_laion2b_image',
     'openai_clip_vit_l14_image',
     'dinov2_reg_base_image',
     'siglip2_base_image',
+];
+/** Full registry aligned with modules/embedding_spaces.py SPACE_DIMS. */
+export const ALL_EMBEDDING_SPACE_CODES = [
+    ...PRIMARY_EMBEDDING_SPACE_CODES,
+    ...CULLING_EMBEDDING_SPACE_CODES,
 ];
 export const EMBEDDING_SPACE_ICONS = {
     mobilenet_v2_imagenet_gap: MobilenetMascot,

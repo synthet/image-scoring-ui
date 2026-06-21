@@ -1,4 +1,4 @@
-import type { CSSProperties, SVGProps } from 'react';
+import type { CSSProperties, ReactElement, SVGProps } from 'react';
 
 export type PixelIconProps = Omit<SVGProps<SVGSVGElement>, 'width' | 'height'> & {
   size?: number;
@@ -14,7 +14,7 @@ export function PixelIcon({
 }: PixelIconProps & { rows: readonly string[] }) {
   const width = rows[0]?.length ?? 16;
   const height = rows.length;
-  const pixels: JSX.Element[] = [];
+  const pixels: ReactElement[] = [];
 
   rows.forEach((row, y) => {
     for (let x = 0; x < row.length; x += 1) {
