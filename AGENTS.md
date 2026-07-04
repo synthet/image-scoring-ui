@@ -25,6 +25,7 @@ for local `file:` installs.
 ## Agent skills
 
 - **`.cursor/skills/design-tokens/SKILL.md`** — edit tokens, build, publish, coordinate consumer bumps (minimal agent-sdlc in this repo)
+- **CLI / search tooling** — not in this repo; use sibling [image-scoring-backend `.cursor/skills/agent-cli-hub`](https://github.com/synthet/image-scoring-backend/blob/main/.cursor/skills/agent-cli-hub/SKILL.md) or [gallery agent-cli-hub](https://github.com/synthet/image-scoring-gallery/blob/main/.cursor/skills/agent-cli-hub/SKILL.md) for install tiers, PATH verification, and rg vs ast-grep tool selection
 
 ## Commands
 
