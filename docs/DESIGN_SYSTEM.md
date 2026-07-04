@@ -1,5 +1,7 @@
 # Design system - palette and icon contract
 
+**Governing rules:** [UX_UI_CONSTITUTION.md](UX_UI_CONSTITUTION.md) — mandatory principles for all surfaces; this doc is the palette and icon reference.
+
 Canonical source for colors, icons, and sizing across Vexlum Scoring products. **Token values live in this package** (`@synthet/image-scoring-design`, `src/tokens.json`). CSS and TS constants are built into `dist/` on `npm run build`.
 
 Consumers:
