@@ -1,3 +1,6 @@
 node_modules/
 *.log
 .DS_Store
+
+# Graphify local knowledge graph (optional; build with `graphify . --code-only`)
+graphify-out/
