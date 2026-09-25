@@ -25,7 +25,12 @@ for local `file:` installs.
 ## Agent skills
 
 - **`.cursor/skills/design-tokens/SKILL.md`** — edit tokens, build, publish, coordinate consumer bumps (minimal agent-sdlc in this repo)
+- **`.cursor/skills/llm-wiki/SKILL.md`** — shared evidence-bound LLM Wiki via MCP **`llmwiki-ro-core`** (`D:\Projects\synthet-llm-wiki`)
 - **CLI / search tooling** — not in this repo; use sibling [image-scoring-backend `.cursor/skills/agent-cli-hub`](https://github.com/synthet/image-scoring-backend/blob/main/.cursor/skills/agent-cli-hub/SKILL.md) or [gallery agent-cli-hub](https://github.com/synthet/image-scoring-gallery/blob/main/.cursor/skills/agent-cli-hub/SKILL.md) for install tiers, PATH verification, and rg vs ast-grep tool selection
+
+## MCP
+
+Copy [`.cursor/mcp.example.json`](.cursor/mcp.example.json) → `.cursor/mcp.json` (gitignored). Includes **`llmwiki-ro-core`** for wiki search/ask.
 
 ## Commands
 
