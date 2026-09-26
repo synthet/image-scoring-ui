@@ -74,6 +74,7 @@ import {
 ## Documentation
 
 - **[docs/DESIGN_SYSTEM.md](./docs/DESIGN_SYSTEM.md)** — Palette, icon contract, phase colors, migration notes (human-oriented; mirrors backend wiki with package-centric implementation map).
+- **[docs/reference-workflow-improvement-candidates.md](./docs/reference-workflow-improvement-candidates.md)** — Clean-room proposal for evidence states, comparison layouts, overlays, uncertainty, action safety, accessibility, and cross-consumer contracts.
 
 ## Repository
 
