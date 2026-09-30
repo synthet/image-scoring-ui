@@ -4,3 +4,9 @@ node_modules/
 
 # Graphify local knowledge graph (optional; build with `graphify . --code-only`)
 graphify-out/
+
+# Operator-local docs tree (gitignored; public wiki must not link here).
+docs/private/
+.docs/private/
+codex-session-*.md
+2026-??-??-*.txt
