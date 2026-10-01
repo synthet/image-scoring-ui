@@ -1,6 +1,6 @@
 {
   "name": "@synthet/image-scoring-design",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "Shared VS Code Dark+ design tokens and UI constants for Vexlum Scoring apps",
   "type": "module",
   "sideEffects": [
@@ -26,7 +26,7 @@
   "scripts": {
     "build": "node scripts/build.mjs && tsc",
     "prepublishOnly": "npm run build",
-    "test": "node scripts/verify-tokens.mjs && node scripts/test-scores.mjs"
+    "test": "node scripts/verify-tokens.mjs && node scripts/test-scores.mjs && node scripts/test-evidence.mjs"
   },
   "repository": {
     "type": "git",

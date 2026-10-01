@@ -26,3 +26,19 @@ export {
 export { EmbeddingSpaceIcon, type EmbeddingSpaceIconProps } from './components/EmbeddingSpaceIcon.js';
 
 export { formatScoreValue } from './format/scores.js';
+
+export {
+  BAND_DISPLAY,
+  CRITERIA_ORDER,
+  CRITERION_LABEL,
+  EVIDENCE_LAYER_LABELS,
+  HEATMAP_RAMP_RGBA,
+  LIMITATION_LABEL,
+  NOISE_RAMP_RGBA,
+  formatSubScore,
+  resolveBandDisplay,
+  type BandDisplay,
+  type BandTier,
+  type EvidenceCriterion,
+  type EvidenceLayerId,
+} from './constants/evidenceDisplay.js';

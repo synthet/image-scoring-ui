@@ -6,13 +6,21 @@ resource: docs/scoring-evidence-tokens.md
 tags: [docs, tokens, design-system, culling, evidence, clean-room]
 timestamp: 2026-09-24T00:00:00Z
 okf_version: 0.1
-status: proposed
+status: in_progress
 ---
 
 # Scoring-evidence tokens and display constants
 
-> **Status:** proposal. No `tokens.json` change yet. It must follow the
-> [UX/UI constitution](UX_UI_CONSTITUTION.md) and the [design system](DESIGN_SYSTEM.md).
+> **Feature spec:** [features/evidence-overlays-design-spec.md](features/evidence-overlays-design-spec.md)
+
+> **Status:** Phase 0 landed (`evidence.*` in `tokens.json`, `src/constants/evidenceDisplay.ts`).
+> Visual regression: run `npm test` (ramps + band resolver). Storybook stories are optional follow-up.
+
+## Phase checklist
+
+- [x] Phase 0 — tokens + `evidenceDisplay.ts` + CSS vars in `dist/tokens.css`
+- [ ] Phase 1 — Storybook: legend card, heatmap swatch, chip states
+- [ ] Phase 2 — publish `1.3.x`; gallery pins dependency; CHANGELOG
 
 ## Provenance (clean-room)
 

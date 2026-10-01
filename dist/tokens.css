@@ -48,6 +48,22 @@
   --label-blue: #1e88e5;
   --label-purple: #8e24aa;
 
+  /* Evidence overlays (scoring-evidence-tokens.md) */
+  --evidence-band-good: #89d185;
+  --evidence-band-fair: #9cdcfe;
+  --evidence-band-weak: #cca700;
+  --evidence-band-bad: #f44747;
+  --evidence-band-unknown: #6d6d6d;
+  --evidence-best-frame: #cca700;
+  --evidence-nearly-tied: #9cdcfe;
+  --evidence-adjusted: #007acc;
+  --evidence-region-primary: #ffffff;
+  --evidence-region-secondary: #9d9d9d;
+  --evidence-mask-tint: rgba(0, 122, 204, 0.35);
+  --evidence-keypoint-visible: #89d185;
+  --evidence-keypoint-occluded: #cca700;
+  --evidence-heatmap-alpha: 0.45;
+
   /* Gallery legacy aliases (one transition cycle) */
   --bg-dark: var(--color-bg-primary);
   --bg-darker: #121212;

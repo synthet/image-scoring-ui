@@ -4,3 +4,4 @@ export { EMBEDDING_SPACE_COLORS, EMBEDDING_SPACE_LABELS, } from './constants/emb
 export { ALL_EMBEDDING_SPACE_CODES, CULLING_EMBEDDING_SPACE_CODES, EMBEDDING_SPACE_ICONS, PRIMARY_EMBEDDING_SPACE_CODES, resolveEmbeddingSpaceIcon, } from './constants/embeddingSpaceIcons.js';
 export { EmbeddingSpaceIcon } from './components/EmbeddingSpaceIcon.js';
 export { formatScoreValue } from './format/scores.js';
+export { BAND_DISPLAY, CRITERIA_ORDER, CRITERION_LABEL, EVIDENCE_LAYER_LABELS, HEATMAP_RAMP_RGBA, LIMITATION_LABEL, NOISE_RAMP_RGBA, formatSubScore, resolveBandDisplay, } from './constants/evidenceDisplay.js';

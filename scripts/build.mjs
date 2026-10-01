@@ -17,6 +17,7 @@ const c = tokens.color;
 const g = tokens.gradio;
 const labels = tokens.label;
 const emb = tokens.embedding;
+const ev = tokens.evidence ?? {};
 
 mkdirSync(DIST, { recursive: true });
 
@@ -82,6 +83,22 @@ const canonicalLines = [
   cssVar('--label-green', labels.green),
   cssVar('--label-blue', labels.blue),
   cssVar('--label-purple', labels.purple),
+  '',
+  '  /* Evidence overlays (scoring-evidence-tokens.md) */',
+  cssVar('--evidence-band-good', ev.bandGood ?? c.success),
+  cssVar('--evidence-band-fair', ev.bandFair ?? c.info),
+  cssVar('--evidence-band-weak', ev.bandWeak ?? c.warning),
+  cssVar('--evidence-band-bad', ev.bandBad ?? c.danger),
+  cssVar('--evidence-band-unknown', ev.bandUnknown ?? c.textMuted),
+  cssVar('--evidence-best-frame', ev.bestFrame ?? c.warning),
+  cssVar('--evidence-nearly-tied', ev.nearlyTied ?? c.info),
+  cssVar('--evidence-adjusted', ev.adjusted ?? c.accent),
+  cssVar('--evidence-region-primary', ev.regionPrimary ?? '#ffffff'),
+  cssVar('--evidence-region-secondary', ev.regionSecondary ?? c.textSecondary),
+  cssVar('--evidence-mask-tint', ev.maskTint ?? 'rgba(0, 122, 204, 0.35)'),
+  cssVar('--evidence-keypoint-visible', ev.keypointVisible ?? c.success),
+  cssVar('--evidence-keypoint-occluded', ev.keypointOccluded ?? c.warning),
+  cssVar('--evidence-heatmap-alpha', String(ev.heatmapOverlayAlpha ?? 0.45)),
   '',
   '  /* Gallery legacy aliases (one transition cycle) */',
   cssVar('--bg-dark', 'var(--color-bg-primary)'),
