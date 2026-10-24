@@ -3,7 +3,7 @@ type: Plan
 title: Scoring-evidence tokens and display constants
 description: Proposed design tokens and TS constants for subject-quality evidence (criterion bands, reason chips, best/nearly-tied badges, diagnostic overlays and heatmaps) shared by the gallery and the backend SPA.
 resource: docs/scoring-evidence-tokens.md
-tags: [docs, tokens, design-system, culling, evidence, clean-room]
+tags: [docs, tokens, design-system, culling, evidence]
 timestamp: 2026-09-24T00:00:00Z
 okf_version: 0.1
 status: in_progress
@@ -22,7 +22,7 @@ status: in_progress
 - [ ] Phase 1 — Storybook: legend card, heatmap swatch, chip states
 - [ ] Phase 2 — publish `1.3.x`; gallery pins dependency; CHANGELOG
 
-## Provenance (clean-room)
+## Provenance
 
 This is UI vocabulary for features derived from a competitive analysis of a commercial wildlife
 burst-culling application's user-visible behaviour. All values below are ours, taken from the
@@ -36,7 +36,7 @@ Two consumers will render the same evidence:
 - the backend SPA (analytics)
 
 The backend source is its
-[subject-aware culling evidence](https://github.com/synthet/image-scoring-backend/blob/master/docs/planning/subject-aware-culling-evidence.md)
+[subject-aware culling evidence](https://github.com/synthet/image-scoring-pipeline/blob/master/docs/planning/subject-aware-culling-evidence.md)
 plan, inside the localization rollout Stage 6. Shared tokens stop the two apps drifting apart.
 
 ## Rules

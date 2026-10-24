@@ -1,6 +1,6 @@
 # @synthet/image-scoring-design
 
-Shared **VS Code Dark+** design tokens and UI constants for **Vexlum Scoring** (`image-scoring-backend` React SPA, `image-scoring-gallery` Electron app, and Gradio operator surfaces).
+Shared **VS Code Dark+** design tokens and UI constants for **Vexlum Scoring** (`image-scoring-pipeline` React SPA, `image-scoring-gallery` Electron app, and Gradio operator surfaces).
 
 **Canonical token source:** `src/tokens.json` — CSS and TypeScript artifacts are generated from this file.
 
@@ -74,7 +74,7 @@ import {
 ## Documentation
 
 - **[docs/DESIGN_SYSTEM.md](./docs/DESIGN_SYSTEM.md)** — Palette, icon contract, phase colors, migration notes (human-oriented; mirrors backend wiki with package-centric implementation map).
-- **[docs/reference-workflow-improvement-candidates.md](./docs/reference-workflow-improvement-candidates.md)** — Clean-room proposal for evidence states, comparison layouts, overlays, uncertainty, action safety, accessibility, and cross-consumer contracts.
+- **[docs/reference-workflow-improvement-candidates.md](./docs/reference-workflow-improvement-candidates.md)** — Proposal for evidence states, comparison layouts, overlays, uncertainty, action safety, accessibility, and cross-consumer contracts.
 
 ## Repository
 

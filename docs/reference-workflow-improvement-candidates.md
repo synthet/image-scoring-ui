@@ -1,9 +1,9 @@
 ---
 type: Plan
 title: Evidence review design-system candidates
-description: Clean-room proposals for reusable evidence, comparison, uncertainty, and action-safety UI primitives.
+description: Proposals for reusable evidence, comparison, uncertainty, and action-safety UI primitives.
 resource: docs/reference-workflow-improvement-candidates.md
-tags: [planning, design-system, evidence, review, clean-room]
+tags: [planning, design-system, evidence, review]
 timestamp: 2026-09-25T18:00:00Z
 okf_version: 0.1
 status: proposed

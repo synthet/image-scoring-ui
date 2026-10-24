@@ -3,7 +3,7 @@ type: Feature Spec
 title: Evidence overlays — design system
 description: Tokens, ramps, band labels, and TS display constants for subject-quality inspector overlays.
 resource: docs/features/evidence-overlays-design-spec.md
-tags: [features, design-system, evidence, overlays, clean-room]
+tags: [features, design-system, evidence, overlays]
 timestamp: 2026-09-30T00:00:00Z
 okf_version: 0.1
 status: partial
@@ -46,6 +46,6 @@ Detailed token tables: [scoring-evidence-tokens.md](../scoring-evidence-tokens.m
 
 ## Related specs
 
-- Behaviour: [image-scoring clean-room 05](https://github.com/synthet/image-scoring/blob/main/docs/clean-room/05-diagnostics-and-visual-inspection.md)
-- API: [VISUAL_EVIDENCE_API.md](https://github.com/synthet/image-scoring-backend/blob/master/docs/technical/VISUAL_EVIDENCE_API.md)
+- Behaviour: [image-scoring specs 05](https://github.com/synthet/image-scoring/blob/main/docs/specs/05-diagnostics-and-visual-inspection.md)
+- API: [VISUAL_EVIDENCE_API.md](https://github.com/synthet/image-scoring-pipeline/blob/master/docs/technical/VISUAL_EVIDENCE_API.md)
 - Gallery UI: [09-visual-evidence-overlays.md](https://github.com/synthet/image-scoring-gallery/blob/main/docs/features/implemented/09-visual-evidence-overlays.md)
