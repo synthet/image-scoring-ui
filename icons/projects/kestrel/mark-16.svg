@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Kestrel — 16 px simplification</title>
+  <desc id="description">Kestrel: bold K whose upper arm is a raised wing; burst culling instrument.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 256,224 H 384 V 800 H 256 Z"/>
+    <path d="M 384,512 L 640,224 H 800 L 448,640 L 384,640 Z"/>
+    <path d="M 448,544 L 800,800 H 608 L 384,640 Z"/>
+  </g>
+</svg>

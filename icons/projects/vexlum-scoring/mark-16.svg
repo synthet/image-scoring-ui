@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Vexlum Scoring — 16 px simplification</title>
+  <desc id="description">Bold V: the scoring hub and pipeline.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 224,224 H 384 L 512,576 L 640,224 H 800 L 576,800 H 448 Z"/>
+  </g>
+</svg>
