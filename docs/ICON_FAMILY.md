@@ -33,6 +33,27 @@ Synth forks of Zed and Warp (`synthet/zed` `assets/ICONS.md`, masters in
 | Eye Quality Model | image-scoring-model | almond eye with a pupil | [`icons/projects/eye-quality-model`](../icons/projects/eye-quality-model) |
 | Vexlum Skills | image-scoring-skills | four-point spark | [`icons/projects/vexlum-skills`](../icons/projects/vexlum-skills) |
 | Design Tokens | image-scoring-ui | three stepped bars | [`icons/projects/design-tokens`](../icons/projects/design-tokens) |
+| Agent SDLC | agent-sdlc | three chevrons | [`icons/projects/agent-sdlc`](../icons/projects/agent-sdlc) |
+| BirdWeather Bot | birdweather-telegram-bot | chat bubble with a gull (bot sub-family) | [`icons/projects/birdweather-telegram-bot`](../icons/projects/birdweather-telegram-bot) |
+| Cursor Bot | cursor-telegram-bot | chat bubble with a `>_` prompt (bot sub-family) | [`icons/projects/cursor-telegram-bot`](../icons/projects/cursor-telegram-bot) |
+| DDO Tools | ddo-tools | twenty-sided die | [`icons/projects/ddo-tools`](../icons/projects/ddo-tools) |
+| PhotoLab MCP | dxo-photolab-mcp | six-blade aperture | [`icons/projects/dxo-photolab-mcp`](../icons/projects/dxo-photolab-mcp) |
+| Enshrouded Tools | enshrouded-tools | three-tongue flame with a core | [`icons/projects/enshrouded-tools`](../icons/projects/enshrouded-tools) |
+| Heroes Templates | heroes-templates | swallowtail flag on a pole | [`icons/projects/heroes-templates`](../icons/projects/heroes-templates) |
+| Hetzner MCP | hetzner-mcp | two-unit server rack | [`icons/projects/hetzner-mcp`](../icons/projects/hetzner-mcp) |
+| Jev MCP | jev-mcp | bold J | [`icons/projects/jev-mcp`](../icons/projects/jev-mcp) |
+| Lightroom MCP | lightroom-mcp | three sliders with offset knobs | [`icons/projects/lightroom-mcp`](../icons/projects/lightroom-mcp) |
+| Lightroom Settings | lightroom-settings | five-point star | [`icons/projects/lightroom-settings`](../icons/projects/lightroom-settings) |
+| NWN Modules | nwn-modules | crenellated tower with a door | [`icons/projects/nwn-modules`](../icons/projects/nwn-modules) |
+| Project Twelve | project-twelve | pickaxe | [`icons/projects/project-twelve`](../icons/projects/project-twelve) |
+| Sharp Image Scoring | sharp-image-scoring | photo frame with a peak | [`icons/projects/sharp-image-scoring`](../icons/projects/sharp-image-scoring) |
+| Agent Mailbox | synthet-agent-mailbox | envelope | [`icons/projects/synthet-agent-mailbox`](../icons/projects/synthet-agent-mailbox) |
+| Agent Swarm | synthet-agent-swarm | three linked nodes | [`icons/projects/synthet-agent-swarm`](../icons/projects/synthet-agent-swarm) |
+| Code Framework | synthet-code-framework | curly braces | [`icons/projects/synthet-code-framework`](../icons/projects/synthet-code-framework) |
+| LLM Wiki | synthet-llm-wiki | open book | [`icons/projects/synthet-llm-wiki`](../icons/projects/synthet-llm-wiki) |
+| USB Switch | usb-switch | two opposing arrows | [`icons/projects/usb-switch`](../icons/projects/usb-switch) |
+| Vault | vault | keyhole | [`icons/projects/vault`](../icons/projects/vault) |
+| WinGui MCP | win-gui-mcp | window with a pointer | [`icons/projects/win-gui-mcp`](../icons/projects/win-gui-mcp) |
 | Zed, Warp | synthet/zed, synthet/warp | labyrinth Z, two-panel mark | in those forks (reference implementation) |
 
 Sub-brands share a base shape and differ by an inner glyph (Driftara: the D).

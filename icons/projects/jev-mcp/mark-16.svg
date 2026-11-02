@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Jev MCP — 16 px simplification</title>
+  <desc id="description">Bold J: typed Jev judgments.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 384,224 H 720 V 576 C 720,720 624,800 488,800 C 384,800 304,736 280,640 L 416,600 C 428,648 452,672 488,672 C 540,672 576,640 576,576 V 352 H 384 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Hetzner MCP — app icon</title>
+  <desc id="description">Two-unit server rack: cloud server operations.</desc>
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="0.65" y2="1">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.45" stop-color="#C3CFDC"/>
+      <stop offset="1" stop-color="#A9B7C6"/>
+    </linearGradient>
+  </defs>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="url(#silver)" fill-rule="evenodd">
+    <path d="M 272,256 H 752 A 48,48 0 0 1 800,304 V 432 A 48,48 0 0 1 752,480 H 272 A 48,48 0 0 1 224,432 V 304 A 48,48 0 0 1 272,256 Z M 280,368 A 40,40 0 1 1 360,368 A 40,40 0 1 1 280,368 Z M 456,344 H 680 A 24,24 0 0 1 704,368 V 368 A 24,24 0 0 1 680,392 H 456 A 24,24 0 0 1 432,368 V 368 A 24,24 0 0 1 456,344 Z"/>
+    <path d="M 272,544 H 752 A 48,48 0 0 1 800,592 V 720 A 48,48 0 0 1 752,768 H 272 A 48,48 0 0 1 224,720 V 592 A 48,48 0 0 1 272,544 Z M 280,656 A 40,40 0 1 1 360,656 A 40,40 0 1 1 280,656 Z M 456,632 H 680 A 24,24 0 0 1 704,656 V 656 A 24,24 0 0 1 680,680 H 456 A 24,24 0 0 1 432,656 V 656 A 24,24 0 0 1 456,632 Z"/>
+  </g>
+</svg>

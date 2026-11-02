@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Agent Mailbox — 16 px simplification</title>
+  <desc id="description">Envelope: encrypted agent messaging.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 224,272 L 800,272 L 512,480 Z"/>
+    <path d="M 224,400 L 512,608 L 800,400 L 800,752 L 224,752 Z"/>
+  </g>
+</svg>

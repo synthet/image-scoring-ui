@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">WinGui MCP — 16 px simplification</title>
+  <desc id="description">Window with a pointer: Windows GUI automation.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 280,224 H 648 A 56,56 0 0 1 704,280 V 584 A 56,56 0 0 1 648,640 H 280 A 56,56 0 0 1 224,584 V 280 A 56,56 0 0 1 280,224 Z M 360,368 H 568 A 8,8 0 0 1 576,376 V 504 A 8,8 0 0 1 568,512 H 360 A 8,8 0 0 1 352,504 V 376 A 8,8 0 0 1 360,368 Z"/>
+    <path d="M 528.5,416.4 L 504,425.5 L 504,870 L 522.8,877.8 L 640.6,760 L 805.7,760 L 811.7,746.9 Z" fill="#101014"/>
+    <path d="M 544,496 L 544,800 L 624,720 L 736,720 Z"/>
+  </g>
+</svg>

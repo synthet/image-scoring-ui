@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Project Twelve — app icon</title>
+  <desc id="description">Pickaxe: 2D sandbox digging.</desc>
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="0.65" y2="1">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.45" stop-color="#C3CFDC"/>
+      <stop offset="1" stop-color="#A9B7C6"/>
+    </linearGradient>
+  </defs>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="url(#silver)" fill-rule="evenodd">
+    <path d="M 655.2,436.7 L 322.8,769.1 L 254.9,701.2 L 587.3,368.8 Z"/>
+    <path d="M 430.3,254.3 Q 783.8,240.2 769.7,593.7 Q 628.3,395.7 430.3,254.3 Z"/>
+  </g>
+</svg>

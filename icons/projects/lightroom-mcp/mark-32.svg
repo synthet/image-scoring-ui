@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Lightroom MCP — 32 px simplification</title>
+  <desc id="description">Three sliders: develop settings for agents.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 264,280 H 760 A 40,40 0 0 1 800,320 V 320 A 40,40 0 0 1 760,360 H 264 A 40,40 0 0 1 224,320 V 320 A 40,40 0 0 1 264,280 Z"/>
+    <path d="M 264,472 H 760 A 40,40 0 0 1 800,512 V 512 A 40,40 0 0 1 760,552 H 264 A 40,40 0 0 1 224,512 V 512 A 40,40 0 0 1 264,472 Z"/>
+    <path d="M 264,664 H 760 A 40,40 0 0 1 800,704 V 704 A 40,40 0 0 1 760,744 H 264 A 40,40 0 0 1 224,704 V 704 A 40,40 0 0 1 264,664 Z"/>
+    <path d="M 320,320 A 96,96 0 1 1 512,320 A 96,96 0 1 1 320,320 Z"/>
+    <path d="M 544,512 A 96,96 0 1 1 736,512 A 96,96 0 1 1 544,512 Z"/>
+    <path d="M 256,704 A 96,96 0 1 1 448,704 A 96,96 0 1 1 256,704 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Heroes Templates — 16 px simplification</title>
+  <desc id="description">Swallowtail flag on a pole: map templates.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 296,224 H 376 A 24,24 0 0 1 400,248 V 776 A 24,24 0 0 1 376,800 H 296 A 24,24 0 0 1 272,776 V 248 A 24,24 0 0 1 296,224 Z"/>
+    <path d="M 400,256 L 784,256 L 688,416 L 784,576 L 400,576 Z"/>
+  </g>
+</svg>
