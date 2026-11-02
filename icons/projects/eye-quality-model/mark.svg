@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Eye Quality Model — app icon</title>
+  <desc id="description">Almond eye with a pupil: the eye-quality model.</desc>
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="0.65" y2="1">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.45" stop-color="#C3CFDC"/>
+      <stop offset="1" stop-color="#A9B7C6"/>
+    </linearGradient>
+  </defs>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="url(#silver)" fill-rule="evenodd">
+    <path d="M 224,512 Q 512,224 800,512 Q 512,800 224,512 Z M 336,512 Q 512,344 688,512 Q 512,680 336,512 Z"/>
+    <path d="M 432,512 A 80,80 0 1 0 592,512 A 80,80 0 1 0 432,512 Z"/>
+  </g>
+</svg>

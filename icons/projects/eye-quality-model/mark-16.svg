@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Eye Quality Model — 16 px simplification</title>
+  <desc id="description">Almond eye with a pupil: the eye-quality model.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 224,512 Q 512,192 800,512 Q 512,832 224,512 Z M 384,512 Q 512,384 640,512 Q 512,640 384,512 Z"/>
+    <path d="M 416,512 A 96,96 0 1 0 608,512 A 96,96 0 1 0 416,512 Z"/>
+  </g>
+</svg>
