@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Design Tokens — app icon</title>
+  <desc id="description">Three stepped bars: shared design tokens.</desc>
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="0.65" y2="1">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.45" stop-color="#C3CFDC"/>
+      <stop offset="1" stop-color="#A9B7C6"/>
+    </linearGradient>
+  </defs>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="url(#silver)" fill-rule="evenodd">
+    <path d="M 256,272 H 768 V 384 H 256 Z"/>
+    <path d="M 256,456 H 640 V 568 H 256 Z"/>
+    <path d="M 256,640 H 512 V 752 H 256 Z"/>
+  </g>
+</svg>
