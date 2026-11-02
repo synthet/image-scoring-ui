@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">NWN Modules — 32 px simplification</title>
+  <desc id="description">Crenellated tower with a door: game module builds.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 280,224 H 384 V 312 H 456 V 224 H 568 V 312 H 640 V 224 H 744 V 440 H 672 V 800 H 352 V 440 H 280 Z M 448,800 V 672 C 448,632 476,608 512,608 C 548,608 576,632 576,672 V 800 Z"/>
+  </g>
+</svg>

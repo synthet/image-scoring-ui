@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Cursor Bot — 32 px simplification</title>
+  <desc id="description">Chat bubble with a prompt: agent control over chat.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 336,240 H 688 A 112,112 0 0 1 800,352 V 528 A 112,112 0 0 1 688,640 H 336 A 112,112 0 0 1 224,528 V 352 A 112,112 0 0 1 336,240 Z M 336,344 L 456,344 L 552,440 L 456,536 L 336,536 L 432,440 Z M 592,440 L 688,440 L 688,536 L 592,536 Z"/>
+    <path d="M 320,600 L 320,792 L 496,600 Z"/>
+  </g>
+</svg>

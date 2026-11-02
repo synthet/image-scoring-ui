@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">WinGui MCP — app icon</title>
+  <desc id="description">Window with a pointer: Windows GUI automation.</desc>
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="0.65" y2="1">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.45" stop-color="#C3CFDC"/>
+      <stop offset="1" stop-color="#A9B7C6"/>
+    </linearGradient>
+  </defs>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="url(#silver)" fill-rule="evenodd">
+    <path d="M 280,224 H 632 A 56,56 0 0 1 688,280 V 568 A 56,56 0 0 1 632,624 H 280 A 56,56 0 0 1 224,568 V 280 A 56,56 0 0 1 280,224 Z M 304,336 H 608 A 16,16 0 0 1 624,352 V 544 A 16,16 0 0 1 608,560 H 304 A 16,16 0 0 1 288,544 V 352 A 16,16 0 0 1 304,336 Z"/>
+    <path d="M 549.1,424.3 L 532,430.6 L 532,833 L 545.1,838.5 L 651.6,732 L 800.8,732 L 805,722.8 Z" fill="#101014"/>
+    <path d="M 560,480 L 560,784 L 640,704 L 752,704 Z"/>
+  </g>
+</svg>

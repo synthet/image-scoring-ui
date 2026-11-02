@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Vault — 16 px simplification</title>
+  <desc id="description">Keyhole: workspace vault and cleanup tools.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 336,400 A 176,176 0 1 1 688,400 A 176,176 0 1 1 336,400 Z"/>
+    <path d="M 432,480 L 592,480 L 640,800 L 384,800 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Agent Swarm — 32 px simplification</title>
+  <desc id="description">Three linked nodes: majority judgments across harnesses.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 324,624.5 L 380,655.5 L 540,367.5 L 484,336.5 Z"/>
+    <path d="M 672,672 L 672,608 L 352,608 L 352,672 Z"/>
+    <path d="M 540,336.5 L 484,367.5 L 644,655.5 L 700,624.5 Z"/>
+    <path d="M 384,352 A 128,128 0 1 1 640,352 A 128,128 0 1 1 384,352 Z"/>
+    <path d="M 224,640 A 128,128 0 1 1 480,640 A 128,128 0 1 1 224,640 Z"/>
+    <path d="M 544,640 A 128,128 0 1 1 800,640 A 128,128 0 1 1 544,640 Z"/>
+  </g>
+</svg>

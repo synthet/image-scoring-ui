@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">LLM Wiki — 16 px simplification</title>
+  <desc id="description">Open book: the evidence wiki.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 464,304 C 408,264 328,256 224,264 V 744 C 328,736 408,744 464,784 Z"/>
+    <path d="M 560,304 C 616,264 696,256 800,264 V 744 C 696,736 616,744 560,784 Z"/>
+  </g>
+</svg>

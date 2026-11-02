@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Hetzner MCP — 32 px simplification</title>
+  <desc id="description">Two-unit server rack: cloud server operations.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 272,256 H 752 A 48,48 0 0 1 800,304 V 432 A 48,48 0 0 1 752,480 H 272 A 48,48 0 0 1 224,432 V 304 A 48,48 0 0 1 272,256 Z M 288,368 A 48,48 0 1 1 384,368 A 48,48 0 1 1 288,368 Z"/>
+    <path d="M 272,544 H 752 A 48,48 0 0 1 800,592 V 720 A 48,48 0 0 1 752,768 H 272 A 48,48 0 0 1 224,720 V 592 A 48,48 0 0 1 272,544 Z M 288,656 A 48,48 0 1 1 384,656 A 48,48 0 1 1 288,656 Z"/>
+  </g>
+</svg>

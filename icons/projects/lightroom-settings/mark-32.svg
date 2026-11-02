@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Lightroom Settings — 32 px simplification</title>
+  <desc id="description">Five-point star: rating and culling.</desc>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="#A9B7C6" fill-rule="evenodd">
+    <path d="M 512,236 L 599,412.3 L 793.5,440.5 L 652.8,577.7 L 686,771.5 L 512,680 L 338,771.5 L 371.2,577.7 L 230.5,440.5 L 425,412.3 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Agent SDLC — app icon</title>
+  <desc id="description">Three chevrons: spec-driven stages.</desc>
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="0.65" y2="1">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.45" stop-color="#C3CFDC"/>
+      <stop offset="1" stop-color="#A9B7C6"/>
+    </linearGradient>
+  </defs>
+  <g id="foundation">
+    <rect x="64" y="64" width="896" height="896" rx="184" fill="#101014"/>
+  </g>
+  <g id="glyph" fill="url(#silver)" fill-rule="evenodd">
+    <path d="M 224,320 L 328,320 L 456,512 L 328,704 L 224,704 L 352,512 Z"/>
+    <path d="M 396,320 L 500,320 L 628,512 L 500,704 L 396,704 L 524,512 Z"/>
+    <path d="M 568,320 L 672,320 L 800,512 L 672,704 L 568,704 L 696,512 Z"/>
+  </g>
+</svg>
