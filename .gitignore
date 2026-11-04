@@ -25,3 +25,6 @@ GEMINI.md
 .claude/
 .codex/
 .cursor/
+
+# Local MCP config; the template is .mcp.json.example
+/.mcp.json
