@@ -2,7 +2,7 @@
 
 **Governing rules:** [UX_UI_CONSTITUTION.md](UX_UI_CONSTITUTION.md) — mandatory principles for all surfaces; this doc is the palette and icon reference.
 
-Canonical source for colors, icons, and sizing across Vexlum Scoring products. **Token values live in this package** (`@synthet/image-scoring-design`, `src/tokens.json`). CSS and TS constants are built into `dist/` on `npm run build`.
+Canonical source for colors, icons, and sizing across Vexlum Scoring products. **Token values live in this package** (`@synthet/synth-photo-design`, `src/tokens.json`). CSS and TS constants are built into `dist/` on `npm run build`.
 
 Consumers:
 
@@ -91,7 +91,7 @@ User-facing color tags on images. **Not** UI status colors.
 | `--label-blue` | `#1e88e5` |
 | `--label-purple` | `#8e24aa` |
 
-Use `LABEL_COLORS` from `@synthet/image-scoring-design` in TypeScript.
+Use `LABEL_COLORS` from `@synthet/synth-photo-design` in TypeScript.
 
 ### Score / rating
 
@@ -116,7 +116,7 @@ Use `formatScoreValue()` from this package for normalized **0–1** scores in ta
 | `dinov2_reg_base_image` | `--embedding-dinov2` | `#9cdcfe` |
 | `siglip2_base_image` | `--embedding-siglip2` | `#d16969` |
 
-Import `EMBEDDING_SPACE_COLORS`, `EMBEDDING_SPACE_LABELS`, and `EmbeddingSpaceIcon` from `@synthet/image-scoring-design` instead of hardcoding hex or Lucide picks in apps.
+Import `EMBEDDING_SPACE_COLORS`, `EMBEDDING_SPACE_LABELS`, and `EmbeddingSpaceIcon` from `@synthet/synth-photo-design` instead of hardcoding hex or Lucide picks in apps.
 
 ## UI patterns (apps implement; tokens defined here)
 
@@ -239,10 +239,10 @@ Use these pairings so WCAG AA text contrast (4.5:1 normal copy) holds on dark ch
 
 ## Implementation map
 
-| Concern | Package (`@synthet/image-scoring-design`) | Backend frontend | Gallery |
+| Concern | Package (`@synthet/synth-photo-design`) | Backend frontend | Gallery |
 |---|---|---|---|
 | Token JSON (source of truth) | `src/tokens.json` (export `./tokens.json`) | Depend on package; stop duplicating hex in `index.css` over time | Same |
-| CSS variables | `dist/tokens.css` | `dist/tailwind-theme.css` via `@import` in [frontend/src/index.css](https://github.com/synthet/image-scoring-backend/blob/main/frontend/src/index.css) | `@import '@synthet/image-scoring-design/tokens.css'` (replace or alias [src/styles/tokens.css](https://github.com/synthet/image-scoring-gallery/blob/main/src/styles/tokens.css)) |
+| CSS variables | `dist/tokens.css` | `dist/tailwind-theme.css` via `@import` in [frontend/src/index.css](https://github.com/synthet/image-scoring-backend/blob/main/frontend/src/index.css) | `@import '@synthet/synth-photo-design/tokens.css'` (replace or alias [src/styles/tokens.css](https://github.com/synthet/image-scoring-gallery/blob/main/src/styles/tokens.css)) |
 | Gradio overrides | `dist/gradio-snippet.css` | Wire in operator / Gradio bundle | n/a |
 | Label / phase hex in TS | `LABEL_COLORS`, `PHASE_STATUS_COLORS`, `phaseStatusColor` | Replace [labelColors.ts](https://github.com/synthet/image-scoring-backend/blob/main/frontend/src/constants/labelColors.ts) imports | Replace gallery constants |
 | Embedding icon colors | `EMBEDDING_SPACE_COLORS`, `EMBEDDING_SPACE_LABELS`, `EmbeddingSpaceIcon` | Images grid + inspector + Atlas | When showing embedding presence or space selector |
