@@ -9,7 +9,6 @@
   "files": [
     "dist",
     "docs",
-    "icons",
     "README.md"
   ],
   "main": "./dist/index.js",

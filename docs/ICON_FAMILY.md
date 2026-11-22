@@ -1,90 +1,9 @@
-# Icon family (Synth app icons)
+# Synth app icon family
 
-One visual family for every app, tool and web UI in the fleet. It is the family already shipped by the
-Synth forks of Zed and Warp (`synthet/zed` `assets/ICONS.md`, masters in
-`assets/branding/jetbrains-darcula-concepts/`). Templates, tokens, project masters and the renderer live in
-[`../icons/`](../icons/README.md).
+The Synth family icons moved to **[synthet/synth-brand](https://github.com/synthet/synth-brand)**, with their history. This repo pins commit [`be5f947`](https://github.com/synthet/synth-brand/commit/be5f94765e1c150477cbfb712160eb1ab6530469):
 
-## Rules
+- the family rules and mark registry: [`docs/ICON_FAMILY.md`](https://github.com/synthet/synth-brand/blob/be5f94765e1c150477cbfb712160eb1ab6530469/docs/ICON_FAMILY.md)
+- the masters: [`icons/projects/`](https://github.com/synthet/synth-brand/tree/be5f94765e1c150477cbfb712160eb1ab6530469/icons/projects)
+- the renderer, tokens and templates: [`icons/`](https://github.com/synthet/synth-brand/tree/be5f94765e1c150477cbfb712160eb1ab6530469/icons)
 
-| Element | Rule |
-|---|---|
-| Canvas | 1024 x 1024 vector master |
-| Plate | flat `#101014` rounded square: x/y 64, size 896, radius 184. No gradient, rim, bevel or shadow |
-| Surround | transparent outside the plate at every size (no black frame on the Windows desktop) |
-| Mark | one idea in silver: gradient `#F8FAFC` to `#C3CFDC` to `#A9B7C6` (x2 0.65, y2 1) on the master, flat `#A9B7C6` on small masters |
-| Safe box | mark inside x/y 224..800 |
-| Distinctness | every mark is recognisable in grayscale; colour is never the differentiator |
-| Variants | release channels share plate and mark; only the glyph tint differs (preview `#6897BB`, nightly `#9876AA`, dev `#CC7832`) |
-| Small sizes | hand-simplified `mark-32.svg` (bars >= 96 units, 32-unit grid) and `mark-16.svg` (bars >= 128 units, 64-unit grid) |
-| Rendering | rasterise each size directly from the vector (never downscale from 1024) |
-| Third-party marks | never copy or imitate another product's logo; draw the project's own idea |
-
-## Fleet marks
-
-| App | Project | Mark | Masters |
-|---|---|---|---|
-| Vexlum Scoring | image-scoring hub and pipeline | bold V | [`icons/projects/vexlum-scoring`](../icons/projects/vexlum-scoring) |
-| Driftara Gallery | image-scoring-gallery | Driftara D with a 2x2 photo grid | [`icons/projects/driftara-gallery`](../icons/projects/driftara-gallery) |
-| Driftara Video | video-gallery | Driftara D with a play mark | [`icons/projects/driftara-video`](../icons/projects/driftara-video) |
-| AI Quotas | ai-quotas | 270° gauge ring with a centre dot | [`icons/projects/ai-quotas`](../icons/projects/ai-quotas) |
-| Kestrel | kestrel (desktop review app) | bold K with a raised-wing upper arm | [`icons/projects/kestrel`](../icons/projects/kestrel) |
-| Vexlum Mobile | image-scoring-mobile | label tag with a punched hole | [`icons/projects/vexlum-mobile`](../icons/projects/vexlum-mobile) |
-| Eye Quality Model | image-scoring-model | almond eye with a pupil | [`icons/projects/eye-quality-model`](../icons/projects/eye-quality-model) |
-| Vexlum Skills | image-scoring-skills | four-point spark | [`icons/projects/vexlum-skills`](../icons/projects/vexlum-skills) |
-| Design Tokens | image-scoring-ui | three stepped bars | [`icons/projects/design-tokens`](../icons/projects/design-tokens) |
-| Agent SDLC | agent-sdlc | three chevrons | [`icons/projects/agent-sdlc`](../icons/projects/agent-sdlc) |
-| BirdWeather Bot | birdweather-telegram-bot | chat bubble with a gull (bot sub-family) | [`icons/projects/birdweather-telegram-bot`](../icons/projects/birdweather-telegram-bot) |
-| Cursor Bot | cursor-telegram-bot | chat bubble with a `>_` prompt (bot sub-family) | [`icons/projects/cursor-telegram-bot`](../icons/projects/cursor-telegram-bot) |
-| DDO Tools | ddo-tools | twenty-sided die | [`icons/projects/ddo-tools`](../icons/projects/ddo-tools) |
-| PhotoLab MCP | dxo-photolab-mcp | six-blade aperture | [`icons/projects/dxo-photolab-mcp`](../icons/projects/dxo-photolab-mcp) |
-| Enshrouded Tools | enshrouded-tools | three-tongue flame with a core | [`icons/projects/enshrouded-tools`](../icons/projects/enshrouded-tools) |
-| Heroes Templates | heroes-templates | swallowtail flag on a pole | [`icons/projects/heroes-templates`](../icons/projects/heroes-templates) |
-| Hetzner MCP | hetzner-mcp | two-unit server rack | [`icons/projects/hetzner-mcp`](../icons/projects/hetzner-mcp) |
-| Jev MCP | jev-mcp | bold J | [`icons/projects/jev-mcp`](../icons/projects/jev-mcp) |
-| Lightroom MCP | lightroom-mcp | three sliders with offset knobs | [`icons/projects/lightroom-mcp`](../icons/projects/lightroom-mcp) |
-| Lightroom Settings | lightroom-settings | five-point star | [`icons/projects/lightroom-settings`](../icons/projects/lightroom-settings) |
-| NWN Modules | nwn-modules | crenellated tower with a door | [`icons/projects/nwn-modules`](../icons/projects/nwn-modules) |
-| Project Twelve | project-twelve | pickaxe | [`icons/projects/project-twelve`](../icons/projects/project-twelve) |
-| Sharp Image Scoring | sharp-image-scoring | photo frame with a peak | [`icons/projects/sharp-image-scoring`](../icons/projects/sharp-image-scoring) |
-| Agent Mailbox | synthet-agent-mailbox | envelope | [`icons/projects/synthet-agent-mailbox`](../icons/projects/synthet-agent-mailbox) |
-| Agent Swarm | synthet-agent-swarm | three linked nodes | [`icons/projects/synthet-agent-swarm`](../icons/projects/synthet-agent-swarm) |
-| Code Framework | synthet-code-framework | curly braces | [`icons/projects/synthet-code-framework`](../icons/projects/synthet-code-framework) |
-| LLM Wiki | synthet-llm-wiki | open book | [`icons/projects/synthet-llm-wiki`](../icons/projects/synthet-llm-wiki) |
-| USB Switch | usb-switch | two opposing arrows | [`icons/projects/usb-switch`](../icons/projects/usb-switch) |
-| Vault | vault | keyhole | [`icons/projects/vault`](../icons/projects/vault) |
-| WinGui MCP | win-gui-mcp | window with a pointer | [`icons/projects/win-gui-mcp`](../icons/projects/win-gui-mcp) |
-| Zed, Warp | synthet/zed, synthet/warp | labyrinth Z, two-panel mark | in those forks (reference implementation) |
-
-Sub-brands share a base shape and differ by an inner glyph (Driftara: the D).
-
-## Outputs and where they go
-
-`python icons/render_icons.py --masters <dir> --out <dir>` writes, and verifies:
-
-| File | Use |
-|---|---|
-| `app.ico` (16-128 BMP32 + 256 PNG) | Windows shortcuts, Electron `icon` on Windows, installers |
-| `favicon.ico` (16/32/48) | `<link rel="icon">`, Gradio `favicon_path`, FastAPI static favicon |
-| `favicon.svg` (32 px master) | `<link rel="icon" type="image/svg+xml">` |
-| `apple-touch-icon.png` (180) | `<link rel="apple-touch-icon">` |
-| `icon-192.png`, `icon-512.png` | web manifest `icons` |
-| `png/<size>.png` (16-1024) | Electron Linux/macOS icon sources, Expo `icon` (1024), README headers, About windows |
-
-Wiring by surface:
-
-- **Web / Vite / Electron renderer:** copy `favicon.ico`, `favicon.svg`, `apple-touch-icon.png` into the public folder
-  and reference them from `index.html`.
-- **Gradio / FastAPI:** pass `favicon_path` to `launch()` or serve `favicon.ico` from the static route.
-- **Electron main:** `new BrowserWindow({ icon })` with `app.ico` on Windows and `png/512.png` elsewhere; point the
-  builder config (`win.icon`, `mac.icon`, `linux.icon`) at the same files.
-- **Expo:** run with `--expo` to also write `expo/`: `icon.png` (1024, opaque full-bleed plate; iOS masks it),
-  `adaptive-foreground.png` (mark only on transparent, for `android.adaptiveIcon.foregroundImage`),
-  `monochrome.png` (white mark, for `monochromeImage`), `splash-icon.png` (plated icon) and `favicon.png` (48).
-- **Windows desktop shortcuts:** `IconLocation` = an installed copy of `app.ico` outside any git checkout (for
-  example `%LOCALAPPDATA%\SynthIcons\<project>.ico`), so branch switches cannot remove it.
-
-## Checks
-
-`render_icons.py --check <out>` probes all four corners and edge midpoints of every PNG and ICO frame for the
-transparent surround, confirms the ICO frame sizes, and that sub-256 frames are BMP32 and the 256 frame is PNG.
+This repo keeps its own rendered icon in `assets/`. The icon system lives in its own repo so the fleet-wide marks don't depend on this design-token package. To follow a newer synth-brand, update the pinned commit here.
