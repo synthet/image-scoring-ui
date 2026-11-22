@@ -10,7 +10,7 @@ okf_version: 0.1
 
 # AI workflow — image-scoring-ui
 
-This repository ships **design tokens** only (`@synthet/image-scoring-design`). Full agent infrastructure lives in sibling repos:
+This repository ships **design tokens** only (`@synthet/synth-photo-design`). Full agent infrastructure lives in sibling repos:
 
 | Need | Repo |
 |------|------|

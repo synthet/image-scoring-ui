@@ -75,7 +75,7 @@ function themeColorVars({ tailwindRefs = false } = {}) {
 }
 
 const canonicalLines = [
-  '/* Auto-generated from @synthet/image-scoring-design — do not edit */',
+  '/* Auto-generated from @synthet/synth-photo-design — do not edit */',
   ':root {',
   ...themeColorVars(),
   cssVar('--label-red', labels.red),

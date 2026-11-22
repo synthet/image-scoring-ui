@@ -18,7 +18,7 @@ workspaces with backend + gallery).
 - **Source of truth:** `src/tokens.json` — never edit generated `dist/` by hand.
 - **Build before consume:** Run `npm run build` before `npm install` in sibling repos
   using `"file:../image-scoring-ui"`.
-- **Publishing:** Tag releases (`v1.2.x`); gallery may pin `github:synthet/image-scoring-ui#v*`.
+- **Publishing:** Tag releases (`v1.2.x`); gallery may pin `github:synthet/synth-photo-design#v*`.
 - **Cross-repo bumps:** After token/icon changes, update backend SPA and gallery
   dependencies in the same release window to avoid React minified errors from stale bundles.
 

@@ -17,14 +17,14 @@ App-specific binding (stack wiring, file paths, checklists): [backend UX_UI_CONS
 - **Theme:** VS Code Dark+ — dark-only, no light-mode variant.
 - **Tone:** Utilitarian, information-dense, pro-tool aesthetic (developer IDE, not consumer photo app).
 - **Density:** Tight padding and margins; maximize content area for images, tables, and pipeline status.
-- **Consistency:** Both main apps share the same semantic colors, accent blue, and status affordances via `@synthet/image-scoring-design`.
+- **Consistency:** Both main apps share the same semantic colors, accent blue, and status affordances via `@synthet/synth-photo-design`.
 
 ## Authority stack
 
 ```
 src/tokens.json  (this repo — source of truth for color values)
        ↓  npm run build
-@synthet/image-scoring-design  (dist/*.css + TS exports)
+@synthet/synth-photo-design  (dist/*.css + TS exports)
        ↓  install / file: / git tag
 Consumers: backend frontend/, gallery src/, Gradio gradio-snippet.css
 ```
@@ -81,7 +81,7 @@ Use in-app toasts, trays, or Radix dialogs — not browser `alert()`, `confirm()
 
 When changing `src/tokens.json`, package version, or breaking TS/CSS exports:
 
-1. Change **image-scoring-ui** first; run `npm run build && npm test`; bump `@synthet/image-scoring-design` version when publishing.
+1. Change **image-scoring-ui** first; run `npm run build && npm test`; bump `@synthet/synth-photo-design` version when publishing.
 2. Refresh backend `frontend/package.json` (`file:../../image-scoring-ui`) and gallery `package.json` (git tag pin).
 3. Backend: `npm run design:sync` (Gradio CSS); both consumers: `npm run design:check`.
 4. Visual smoke on `/ui/` and gallery shell; append `docs/log.md` in affected repos; mention version in PR.
